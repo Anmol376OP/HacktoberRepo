@@ -1,0 +1,208 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins',sans-serif;
+}
+
+body{
+    
+    justify-content: top;
+    align-items: top;
+    min-height: 100vh;
+    background: #131313;/* #341b3d*/ /*131313*/
+}
+.Line1{
+    display: flex;
+    flex-wrap: wrap;
+}
+@media (max-width: 400px) {
+    .Line1{
+      flex-direction: column;
+    }
+  }
+.Container1{
+    position: relative;
+    margin:10px;
+    padding:10px;
+}
+.Container1 .Card1{
+    border: 2px solid orange;
+    position: relative;
+    width: 350px;
+    height: 400px;
+    background: #232323;
+    border-radius: 40px;
+    overflow: hidden;
+}
+.Container1 .Card1:before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    clip-path: circle(180px at 80% 20%);
+    transition: 0.5s ease-in-out;
+}
+.Container1 .Colour1::before{
+    background: #DAA520;
+}
+.Container1 .Colour2::before{
+    background: #C0C0C0;
+}
+.Container1 .Colour3::before{
+    background: rgb(177, 103, 30);
+}
+.Container1 .Card1:hover:before{
+    clip-path: circle(250px at 80% -20%);
+}
+.Container1 .Card1 .rank{
+    content: '#1';
+    position: absolute;
+    top: -145%;
+    left: 0%;
+    font-size: 6em;
+    font-weight: 800;
+    font-style: italic;
+    color: rgba(255, 255, 255, 0.1);
+    visibility: hidden;
+}
+.Container1 .Card1:hover .img1{
+    top: 0%;
+    transform: translateY(0%);
+}
+.Container1 .Card1 .img1{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 225px;
+    transition: 0.5s;
+}
+.Container1 .Card1 .Contentbox1{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 100px;
+    text-align: center;
+    
+    z-index: 10;
+    visibility: hidden;
+}
+.Container1 .Card1:hover .Contentbox1{
+    height: 110px;
+    visibility: visible;
+    transition-delay: 0.5s;
+}
+.Container1 .Card1:hover .rank{
+    visibility: visible;
+    transition-delay: 0.5s;
+    font-size: 105px;
+    top:-120%;
+}
+.Container1 .Card1:hover .Contentbox1 h2{
+    position: relative;
+    font-weight: 600;
+    letter-spacing: 1px;
+    font-size: 32px;
+    color: #fff;
+}
+.Container1 .Card1 .Contentbox1 .Points span{
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    line-height: 25px;
+    margin: 0 5px;
+}
+/*----------------------------------------*/
+/* Here starts the bottom lined people */ 
+/*----------------------------------------*/
+.Line2{
+    display: flex;
+    flex-wrap: wrap;
+}
+.Container2{
+   
+    position: relative;
+    margin:5px;
+    padding:5px;
+}
+.Container2 .Card4{
+    border: 2px solid white;
+    position: relative;
+    width: 260px;
+    height: 280px;
+    background: #232323;
+    border-radius: 40px;
+    overflow: hidden;
+}
+.Container2 .Card4:before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #f8f8f6;
+    clip-path: circle(140px at 80% 20%);
+    transition: 0.5s ease-in-out;
+}
+.Container2 .Card4:hover:before{
+    clip-path: circle(180px at 80% -20%);
+}
+.Container2 .Card4:after{
+    content: '';
+    position: absolute;
+    top: 30%;
+    left: -20%;
+    font-size: 8em;
+    font-weight: 800;
+    font-style: italic;
+    color: rgba(255, 255, 255, 0.1);
+}
+.Container2 .Card4:hover .img2{
+    top: 0%;
+    left: 40%;
+    transform: translateY(0%);
+}
+.Container2 .Card4 .img2{
+    position: absolute;
+    border-radius: 50%;
+    
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 225px;
+    transition: 0.5s;
+    overflow: hidden;
+}
+.Container2 .Card4 .Contentbox1{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 100px;
+    text-align: center;
+    
+    z-index: 10;
+    visibility: hidden;
+}
+.Container2 .Card4:hover .Contentbox1{
+    height: 110px;
+    visibility: visible;
+    transition-delay: 0.5s;
+}
+.Container2 .Card4:hover .Contentbox1 h2{
+    position: relative;
+    font-weight: 600;
+    letter-spacing: 1px;
+    color: #fff;
+}
+.Container2 .Card4 .Contentbox1 .Points span{
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    line-height: 25px;
+    margin: 0 5px;
+}
