@@ -11,3 +11,4 @@ for (let i = 3; i < img.length; i++) {
     img[i].height="250"
 }
 
+
