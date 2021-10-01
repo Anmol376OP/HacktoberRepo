@@ -23,9 +23,10 @@ section{
 }
 .text{
     background: #91A88C;
+    border-radius: 0px 40px 0px 40px;
 }
 .text u{
-    position: relative;
+    text-align: center;
     animation: animateColor 5s linear infinite;
 }
 @keyframes animateColor
